@@ -1,4 +1,4 @@
-module usage
+module github.com/cuishuang/usage_reporter
 
 go 1.19
 
