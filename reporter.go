@@ -41,9 +41,14 @@ func main() {
 
 	flag.Parse()
 
-	fmt.Println("用户输入的参数数量:", flag.NFlag())
+	//fmt.Println("用户输入的参数数量:", flag.NFlag())
 
-	fmt.Println("pure is:", pure)
+	//fmt.Println("pure is:", pure)
+
+	if timeInterval <= 0 {
+		fmt.Println("timeInterval must gte 0")
+		return
+	}
 
 	if len(pName) == 0 && pid == 0 {
 		pid = os.Getpid()
